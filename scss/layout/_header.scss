@@ -51,7 +51,7 @@
 			height: 43px;
 			@include flex-center-center;
 			cursor: pointer;
-			background-color:#199cd8;
+			background-color:$science_blue;
 			border: 1px solid transparent;
     		border-radius: 4px;
 			padding: 13px 10px;
@@ -105,6 +105,7 @@
 		.container {
 			@include flex-center-between;
 			height: 100%;
+			padding: 15px 0;
 		}
 
 		&__logo {
@@ -126,7 +127,7 @@
                     width: 20px;
 
                     @media(min-width:1700px){
-                        width: 32px;
+                        width: 30px;
                     }
 
                     svg{
