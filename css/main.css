@@ -110,7 +110,7 @@
   .header--show {
     padding: 15px;
     top: 0;
-    background: linear-gradient(90deg, #1E2F46); }
+    background: linear-gradient(90deg, #253596); }
   .header--hide {
     background: transparent; }
   @media (min-width: 1199px) {
@@ -129,7 +129,7 @@
       justify-content: space-between;
       height: 100%; }
     .header__mobile__logo {
-      width: 50px; }
+      width: 180px; }
     .header__mobile__toggle {
       width: 43px;
       height: 43px;
@@ -176,22 +176,22 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 100%;
-      padding: 15px 0; }
+      height: 100%; }
     .header__desktop__logo {
-      width: 50px; }
+      width: 300px; }
     .header__desktop__contact {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 30px; }
       .header__desktop__contact__item {
-        background-color: #199cd8;
-        padding: 10px;
+        background-color: #253596;
+        padding: 5px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px; }
+        gap: 10px;
+        border-radius: 17px; }
         .header__desktop__contact__item__icon {
           width: 20px; }
           @media (min-width: 1700px) {
@@ -215,7 +215,7 @@
   position: fixed;
   top: 0;
   left: -200%;
-  background: #1E2F46;
+  background: #253596;
   z-index: 100;
   padding: 30px 5px;
   transition: 0.3s; }
@@ -433,7 +433,7 @@
         border: 2px solid #0870D8; }
   .hero__content {
     width: 100%;
-    background-color: #1E2F46;
+    background-color: #253596;
     margin-top: 50%;
     padding: 15px;
     display: flex;
@@ -657,7 +657,7 @@
       .offer__grid {
         gap: 120px; } }
     .offer__grid__item {
-      background-color: #1E2F46;
+      background-color: #253596;
       height: 400px;
       display: flex;
       align-items: center;
@@ -697,7 +697,7 @@
         display: none; } }
     .offer__carrousel__item {
       width: 95%;
-      background-color: #1E2F46;
+      background-color: #253596;
       height: 400px;
       display: flex;
       align-items: center;

@@ -43,7 +43,7 @@
 		}
 
 		&__logo {
-			width: 50px;
+			width: 180px;
 		}
 
 		&__toggle {
@@ -105,11 +105,10 @@
 		.container {
 			@include flex-center-between;
 			height: 100%;
-			padding: 15px 0;
 		}
 
 		&__logo {
-			width: 50px;
+			width: 300px;
 		}
 
         &__contact{
@@ -117,10 +116,11 @@
             gap: 30px;
 
             &__item{
-				background-color: #199cd8;
-				padding: 10px;
+				background-color: $elephant;
+				padding: 5px 20px;
                 @include flex-center-center;
                 gap: 10px;
+				border-radius: 17px;
 
                 &__icon{
                     width: 20px;
