@@ -5,12 +5,12 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
-    background: $elephant;
+    background: transparent;
    
       @media(min-width:1199px){
         padding: 0 30px;
 		height: auto;
-		background: $elephant;
+		background: transparent;
     }
 
 
@@ -21,7 +21,7 @@
 	}
 
 	&--hide{
-		background: $elephant;
+		background: transparent;
 	}
 
 	@media(min-width:1199px){
@@ -98,7 +98,6 @@
 		height: auto;
 		display: none;
 
-
 		@media(min-width: 1200px) {
 			display: block;
 		}
@@ -118,6 +117,8 @@
             gap: 30px;
 
             &__item{
+				background-color: #199cd8;
+				padding: 10px;
                 @include flex-center-center;
                 gap: 10px;
 
