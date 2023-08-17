@@ -1,0 +1,71 @@
+.call_action{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 0px 0 30px 0;
+
+    @media(min-width:1199px){
+        padding: 0px 0 60px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;
+    }
+
+    p{
+        /*padding-top: 15px;*/
+        color: $black;
+        font-family: GE Sans;
+        font-size: 15px;
+        text-align: center;
+
+        @media(min-width: 1199px){
+            font-size: 18px;
+            /*padding-top: 30px;*/
+        }
+    }
+
+    &__button{
+        @include flex-center-center;
+
+        @media(min-width:1199px){
+            @include flex-center-end;
+        }
+
+        a{
+            border: 2px solid $science_blue;
+            margin-top: 15px;
+            background-color:$science_blue ;
+            font-family: GE Sans Bold;
+            font-weight: bold;
+            padding: 15px 30px ;
+            color:white;
+            font-size: 15px;
+            border-radius: 10px;
+
+            @media(min-width:300px){
+                font-size: 20px;         
+            }
+
+            @media(min-width:768px){
+                font-size: 25px;
+                
+            }
+
+            @media(min-width:1199px){
+                margin-top: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 30px;
+            }
+        }
+
+        a:hover{
+            background-color:$white ;
+            color: $science_blue;
+            border: 2px solid $science_blue;
+        }
+    }
+}

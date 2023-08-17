@@ -1,0 +1,66 @@
+//* Globals
+@import 'globals/colors';
+@import 'globals/container.scss';
+
+
+//* Mixins
+@import 'mixins/flex';
+
+//* Layouts
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/footer';
+@import 'layout/whatsapp';
+
+//*components
+@import 'components/hero';
+@import 'components/services';
+@import 'components/call_action';
+@import 'components/offer';
+@import 'components/request';
+@import 'components/white_line';
+@import 'components/form';
+
+//*thanks
+@import 'components/thanks';
+
+@font-face {
+	font-family: GE Sans;
+	src: url('../fonts/gesans-regular.ttf') format('truetype');
+
+  }
+
+  @font-face {
+	font-family: GE Sans Bold;
+	src: url('../fonts/gesans-bold.ttf') format('truetype');
+
+  }
+
+
+  
+*{
+	font-family: GE Sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button{
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	transition: 0.3s;
+}
+
+a{
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+svg{
+	width: 100%;
+	height: 100%;
+}
+
+
+

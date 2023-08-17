@@ -1,0 +1,73 @@
+.services{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 60px 0 30px 0;
+
+    @media(min-width:1199px){
+        padding: 120px 0 60px 0;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        
+        @media(min-width: 768px){
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            
+        }
+    }
+
+    &__item{
+        @include flex-center-start;
+        flex-direction: column;
+        gap: 15px;
+
+        @media(min-width: 768px){
+            gap: 30px;
+        }
+
+        &__imagen{
+            width: auto;
+            height: 100px;
+
+            @media(min-width: 300px){
+                width: auto;
+                height: 144px;
+            }
+
+            @media(min-width: 768px){
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        &__text{
+            p{
+                color: $black;
+                font-size: 15px;
+                text-align: center;
+                font-family: GE Sans bold;
+                font-weight: bold;
+        
+                @media(min-width:768px){
+                    font-size: 20px;
+                }
+
+                @media(min-width:1199){
+                    padding-top: 25px;
+                }
+        
+        
+                @media(min-width:1700px){
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+
+
+}
