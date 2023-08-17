@@ -105,7 +105,8 @@
 		.container {
 			@include flex-center-between;
 			height: 100%;
-			padding: 15px 0;
+			padding-top: 15px ;
+			padding-bottom: 15px;
 		}
 
 		&__logo {
@@ -136,15 +137,12 @@
                 }
 
                 a.phone{
-                    font-size: 16px;
+					font-family: Lato-Regular;
+                    font-size: 18px;
                     color: $white;
                     font-weight: 400;
                     padding: 10px 0px ;
                     transition: 0.3s;
-
-                    @media(min-width:1700px){
-                        font-size: 16px;
-                    }
         
                 }  
             }

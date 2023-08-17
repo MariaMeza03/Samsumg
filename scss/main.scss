@@ -25,21 +25,33 @@
 @import 'components/thanks';
 
 @font-face {
-	font-family: GE Sans;
-	src: url('../fonts/gesans-regular.ttf') format('truetype');
+	font-family:  OpenSans-Regular;
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 
   }
 
   @font-face {
-	font-family: GE Sans Bold;
-	src: url('../fonts/gesans-bold.ttf') format('truetype');
+	font-family:  OpenSans-Bold;
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+
+  }
+
+  @font-face {
+	font-family: Lato-Bold;
+	src: url('../fonts/Lato-Bold.ttf') format('truetype');
+
+  }
+
+  @font-face {
+	font-family: Lato-Regular;
+	src: url('../fonts/Lato-Regular.ttf') format('truetype');
 
   }
 
 
   
 *{
-	font-family: GE Sans;
+	font-family: OpenSans-Regular;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
