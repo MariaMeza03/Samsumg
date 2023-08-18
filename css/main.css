@@ -645,22 +645,22 @@
           align-items: center;
           justify-content: flex-end; } }
       .offer__grid__item--one {
-        background-image: url();
+        background-image: url("../../img/one.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .offer__grid__item--two {
-        background-image: url();
+        background-image: url("../../img/two.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .offer__grid__item--three {
-        background-image: url();
+        background-image: url("../../img/three.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .offer__grid__item--four {
-        background-image: url();
+        background-image: url("../../img/four.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
