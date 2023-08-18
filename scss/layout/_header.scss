@@ -6,6 +6,7 @@
 	left: 0;
 	z-index: 100;
     background: transparent;
+	display: flex;
    
       @media(min-width:1199px){
         padding: 0 30px;
@@ -43,7 +44,7 @@
 		}
 
 		&__logo {
-			width: 180px;
+			width: 80px;
 		}
 
 		&__toggle {

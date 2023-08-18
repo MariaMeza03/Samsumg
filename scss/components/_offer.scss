@@ -16,7 +16,7 @@
     &--prev{
 		position: absolute;
         left: 15px;
-		top: 40%;
+		top: 50%;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -32,7 +32,7 @@
 	&--next{
 		position: absolute;
         right: 15px;
-		top: 40%;
+		top: 50%;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -66,6 +66,7 @@
     }
 
     &__grid{
+        width: 100%;
         padding: 30px 0;
         grid-template-columns: repeat(4, 1fr);
         gap: 15px;
@@ -73,52 +74,45 @@
 
         @media(min-width: 992px){
             display: grid;
-            padding: 60px 0;
-            gap: 30px;
+            padding: 30px 0 60px 0;
         }
 
         @media(min-width: 1199px){
-            padding: 140px 0 60px;
             gap: 30px;
         }
 
-        @media(min-width: 1700px){
-            gap: 120px;
-        }
-
         &__item{
-            height: 400px;
+            height: 339px;
             @include flex-center-start;
             flex-direction: column;
-            padding: 15px;
 
             @media(min-width: 1199px){
                 @include flex-center-end;
             }
 
             &--one{
-                background-image: url("../../img/one.webp");
+                background-image: url("../../img/four.webp");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
             &--two{
-                background-image: url("../../img/two.webp");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            &--three{
                 background-image: url("../../img/three.webp");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
+            &--three{
+                background-image: url("../../img/two.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
             &--four{
-                background-image: url("../../img/four.webp");
+                background-image: url("../../img/one.webp");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -126,15 +120,19 @@
 
 
             &__text{
-                p{
+                width: 100%;
+                background-color: $elephant;
+
+                h1{
+                    width: 100%;
                     color: $white;
                     font-family: GE Sans;
                     font-size: 15px;
                     text-align: center;
+                    padding: 15px;
             
                     @media(min-width: 1199px){
                         font-size: 18px;
-                        padding-top: 30px;
                     }
                 }
             }
@@ -142,38 +140,66 @@
     }
 
     &__carrousel{
+        width: 80%;
         padding: 30px 0 10px 0;
-
         @media(min-width: 992px){
             display: none;
         }
 
         &__item{
-            width: 95%;
-            background-color:$elephant;
-            height: 400px;
+            width: 100%;
+            height: 339px;
             @include flex-center-start;
             flex-direction: column;
-            padding: 15px;
-            margin: 20px 1px;
-            
-            &__imagen{
-                width: 100%;
-                height: 250px;
-                position: relative;
-                top: -40px;
+
+            @media(min-width: 1199px){
+                @include flex-center-end;
             }
 
+            &--one{
+                background-image: url("../../img/four.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &--two{
+                background-image: url("../../img/three.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &--three{
+                background-image: url("../../img/two.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &--four{
+                background-image: url("../../img/one.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+
             &__text{
-                p{
+                width: 100%;
+                margin-top: auto;
+                background-color: $elephant;
+
+                h1{
+
                     color: $white;
                     font-family: GE Sans;
                     font-size: 15px;
                     text-align: center;
+                    padding: 15px;
             
                     @media(min-width: 1199px){
                         font-size: 18px;
-                        padding-top: 30px;
                     }
                 }
             }
@@ -181,141 +207,30 @@
 
     }
 
-    &__button{
-        width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        border-radius: 5px;
-
-        @media(min-width:678px){
-            width: 80%;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media(min-width:1199px){
-            width: 60%;
-        }
-        
-        &__item_one{
-            height: 100px;
-            border: 1px solid $science_blue;
-            border-radius: 5px 5px 0px 0px;
-            @include flex-center-center;
-            padding: 15px;
-
-            @media(min-width:678px){
-                border-radius: 5px 0 0 5px;
-            }
-
-            h1{
-                color:$science_blue;
-                font-size: 20px;
-                text-align: center;
-                font-family: GE Sans bold;
-                font-weight: bold;
-                line-height: 25px;
-        
-                @media(min-width:768px){
-                    font-size: 25px;
-                    line-height: 30px;
-                }
-        
-                @media(min-width:1700px){
-                    font-size: 30px;
-                    line-height: 35px;
-                }
-            }
-        }
-
-        &__item_two{
-            border: 2px solid $science_blue;
-            height: 100px;
-            background-color: $science_blue;
-            border-radius: 0 0px 5px 5px;
-            @include flex-center-center;
-            gap: 15px;
-            padding: 15px;
-            cursor: pointer;
-
-            @media(min-width:678px){
-                border-radius: 0 5px 5px 0;
-            }
-
-            &__icon{
-                width: 64px;
-            }
-
-            h1{
-                color:$white;
-                font-size: 20px;
-                text-align: center;
-                font-family: GE Sans bold;
-                font-weight: bold;
-                line-height: 25px;
-        
-                @media(min-width:768px){
-                    font-size: 25px;
-                    line-height: 30px;
-                }
-        
-                @media(min-width:1700px){
-                    font-size: 30px;
-                    line-height: 35px;
-                }
-            }
-
-            &:hover{
-                background-color:$white ;
-                border: 2px solid $science_blue;
-
-                h1{
-                    color: $science_blue;
-                }
-
-                .offer__button__item_two__icon{
-                    img{
-                        filter: invert(1) hue-rotate(186deg);
-                        filter: drop-shadow(rgb(10, 89, 210) 3px 2px 0px);
-                    }
-                }
-            }
-        }
-
-    }
 }
 
 .swiper{
-	width: 80%;
-	height: 100%;
-
-    @media(min-width: 399px){
-        width: 70%;
-    }
-
-    @media(min-width: 499px){
-        width: 60%;
-    }
-
-    @media(min-width: 599px){
-        width: 50%;
-    }
-
+	width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
 
 		.swiper-slide{
-			width: 99% !important;
-			height: 100%;
-            @include flex-center-center;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			-webkit-justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			-webkit-align-items: center;
+            width: 100% !important;
+            height: 100%;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center; 
 
 		}
+
+        
 
 }

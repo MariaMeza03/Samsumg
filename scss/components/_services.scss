@@ -5,7 +5,7 @@
     padding: 60px 0 30px 0;
 
     @media(min-width:1199px){
-        padding: 120px 0 60px 0;
+        padding: 60px 0 60px 0;
     }
 
     h1.title{
@@ -32,11 +32,17 @@
 
     &__grid{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 15px;
         padding-top: 30px;
         
         @media(min-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            
+        }
+
+        @media(min-width: 1199px){
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             
@@ -69,13 +75,23 @@
     
     
             &__imagen{
-                height: 91px
+                height: 91px;
+                margin: auto;
+
+                @media(min-width: 768px){
+                    @include flex-start-center;
+                    margin: 0;
+                }
             }
         
             &__text{
-                @include flex-start-center;
+                @include flex-center-center;
                 flex-direction:column;
                 gap: 15px;
+
+                @media(min-width: 768px){
+                    @include flex-start-center;
+                }
     
                 h1{
                     color: $water_blue;
@@ -118,6 +134,7 @@
             padding: 15px 30px ;
             color:white;
             border-radius: 28px;
+            text-align: center;
 
             @media(min-width:300px){
                 font-size: 20px;         
