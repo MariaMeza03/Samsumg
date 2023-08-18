@@ -12,8 +12,7 @@
         color: $white;
         font-size: 20px;
         text-align: center;
-        font-family: GE Sans bold;
-        font-weight: bold;
+        font-family: Lato-Bold;
     
         @media(min-width:768px){
             font-size: 25px;
@@ -50,17 +49,12 @@
         }
 
         &__item{
-            @include flex-start-start;
+            @include flex-center-start;
             flex-direction: column;
             gap: 15px;
 
             &__imagen{
                 height: 91px;
-                margin: auto;
-
-                @media(min-width: 768px){
-                    @include flex-start-center;
-                }
             }
         
             &__text{
@@ -133,7 +127,4 @@
         }
     }
     
-
-
-
 }
