@@ -2,10 +2,10 @@
     width: 100%;
 	position: relative;
 	height: auto;
-    padding: 0 0 30px 0;
+    padding: 30px 0 30px 0;
 
     @media(min-width:1199px){
-        padding: 0 0 60px 0 ;
+        padding: 0;
     }
 
     .container{
@@ -53,13 +53,13 @@
             text-align: center;
             font-family: GE Sans bold;
             font-weight: bold;
-    
+        
             @media(min-width:768px){
                 font-size: 25px;
             }
-    
+        
             @media(min-width:1700px){
-                font-size: 30px;
+                font-size: 35px;
             }
         }
 
@@ -124,15 +124,16 @@
                 background-color: $elephant;
 
                 h1{
+                    font-weight: normal;
                     width: 100%;
                     color: $white;
-                    font-family: GE Sans;
-                    font-size: 15px;
+                    font-family: Lato-Regular;
+                    font-size: 20px;
                     text-align: center;
                     padding: 15px;
             
                     @media(min-width: 1199px){
-                        font-size: 18px;
+                        font-size: 25px;
                     }
                 }
             }
@@ -141,7 +142,7 @@
 
     &__carrousel{
         width: 80%;
-        padding: 30px 0 10px 0;
+        padding: 30px 0 0 0;
         @media(min-width: 992px){
             display: none;
         }
@@ -191,15 +192,16 @@
                 background-color: $elephant;
 
                 h1{
-
+                    font-weight: normal;
+                    width: 100%;
                     color: $white;
-                    font-family: GE Sans;
-                    font-size: 15px;
+                    font-family: Lato-Regular;
+                    font-size: 20px;
                     text-align: center;
                     padding: 15px;
             
                     @media(min-width: 1199px){
-                        font-size: 18px;
+                        font-size: 25px;
                     }
                 }
             }

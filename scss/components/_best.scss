@@ -1,22 +1,22 @@
-.services{
+.the_best{
     width: 100%;
 	position: relative;
 	height: auto;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 30px 0;
 
     @media(min-width:1199px){
         padding: 60px 0 60px 0;
     }
 
     h1.title{
-        color: $black;
+        color: $white;
         font-size: 20px;
         text-align: center;
         font-family: GE Sans bold;
         font-weight: bold;
     
         @media(min-width:768px){
-            font-size: 20px;
+            font-size: 25px;
         }
     
         @media(min-width:1700px){
@@ -26,7 +26,10 @@
 
     .container{
         @include flex-center-center;
-        flex-direction: column;     
+        flex-direction: column;  
+        background: $medium_electric_blue;
+        border-radius: 36px; 
+        padding: 30px;  
     }
 
 
@@ -43,44 +46,20 @@
         }
 
         @media(min-width: 1199px){
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            
+            grid-template-columns: repeat(3, 1fr);
         }
 
         &__item{
             @include flex-start-start;
             flex-direction: column;
             gap: 15px;
-            padding: 30px ;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
-    
-            &:hover{
-                background-color: $medium_electric_blue;
-    
-                .services__grid__item__text{
-                    h1,p{
-                        color: $white;
-                    }
-                }
-    
-                .services__grid__item__imagen{
-                    img{
-                        filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-                        -webkit-filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-                        -moz-filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-                    }
-                }
-            }
-    
-    
+
             &__imagen{
                 height: 91px;
                 margin: auto;
 
                 @media(min-width: 768px){
                     @include flex-start-center;
-                    margin: 0;
                 }
             }
         
@@ -88,13 +67,9 @@
                 @include flex-center-center;
                 flex-direction:column;
                 gap: 15px;
-
-                @media(min-width: 768px){
-                    @include flex-start-center;
-                }
     
                 h1{
-                    color: $water_blue;
+                    color: $white;
                     font-size: 20px;
                     text-align: center;
                     font-family: Lato-Regular;
@@ -106,8 +81,9 @@
                 }
     
                 p{
-                    color: $black;
+                    color: $white;
                     font-size: 15px;
+                    text-align: center;
             
                     @media(min-width: 1199px){
                         font-size: 18px;
@@ -147,7 +123,7 @@
             @media(min-width:1199px){
                 margin-top: 30px;
             }
-
+ 
         }
 
         a:hover{
