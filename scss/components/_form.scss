@@ -33,14 +33,18 @@
         h1{
             color: $white;
             font-size: 20px;
-            font-family: Lato-Bold; 
+            font-family: Lato-Bold;
             text-align: center;
-        
-            @media(min-width:1199px){
+            
+            @media(min-width:768px){
                 font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
                 text-align: start;
             }
-        
+            
             @media(min-width:1700px){
                 font-size: 35px;
             }

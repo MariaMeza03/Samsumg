@@ -3,7 +3,7 @@
     margin: auto;
 	position: relative;
 	height: auto;
-    padding: 30px 0 30px 0;
+    padding: 0 0 30px 0;
 
     @media(min-width:1199px){
         width: 100%;
@@ -15,11 +15,15 @@
         font-size: 20px;
         text-align: center;
         font-family: Lato-Bold;
-    
+            
         @media(min-width:768px){
             font-size: 25px;
         }
     
+        @media(min-width:1199px){
+            font-size: 30px;
+        }
+            
         @media(min-width:1700px){
             font-size: 35px;
         }
@@ -70,7 +74,7 @@
                     text-align: center;
                     font-family: Lato-Regular;
             
-                    @media(min-width:768px){
+                    @media(min-width:1199px){
                         font-size: 25px;
                     }
     

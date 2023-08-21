@@ -13,11 +13,17 @@
         font-size: 20px;
         text-align: center;
         font-family: Lato-Bold;
-    
+
+        
         @media(min-width:768px){
-            font-size: 20px;
+            font-size: 25px;
         }
-    
+
+        @media(min-width:1199px){
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        
         @media(min-width:1700px){
             font-size: 35px;
         }
@@ -48,11 +54,15 @@
         }
 
         &__item{
-            @include flex-start-start;
+            @include flex-center-center;
             flex-direction: column;
             gap: 15px;
             padding: 30px ;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+
+            @media(min-width: 1199px){
+                @include flex-start-start;
+            }
     
             &:hover{
                 background-color: $medium_electric_blue;
@@ -88,7 +98,7 @@
                 flex-direction:column;
                 gap: 15px;
 
-                @media(min-width: 768px){
+                @media(min-width: 1199px){
                     @include flex-start-center;
                 }
     
@@ -98,7 +108,7 @@
                     text-align: center;
                     font-family: Lato-Regular;
             
-                    @media(min-width:768px){
+                    @media(min-width:1199px){
                         font-size: 25px;
                     }
     

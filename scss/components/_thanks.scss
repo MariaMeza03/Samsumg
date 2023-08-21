@@ -33,15 +33,14 @@
     }
 
     a{
-      border: 2px solid $science_blue;
-      margin-top: 30px;
-      background-color:$science_blue ;
-      font-family: GE Sans Bold;
+      border: 2px solid $elephant;
+      margin-top: 15px;
+      background-color:$elephant;
+      font-family: OpenSans-Bold;
       font-weight: bold;
       padding: 15px 30px ;
       color:white;
-      font-size: 15px;
-      border-radius: 10px;
+      border-radius: 28px;
       text-align: center;
 
       @media(min-width:300px){
@@ -49,17 +48,19 @@
       }
 
       @media(min-width:768px){
-          font-size: 25px;     
+          font-size: 25px;
+          
       }
-      
-      @media(min-width:1700px){
-          font-size: 30px;
+
+      @media(min-width:1199px){
+          margin-top: 30px;
       }
+
     }
 
     a:hover{
       background-color:$white ;
-      color: $science_blue;
-      border: 2px solid $science_blue;
+      color: $elephant;
+      border: 2px solid $elephant;
     }
 }
