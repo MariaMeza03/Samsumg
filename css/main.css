@@ -551,7 +551,7 @@
           height: 800px; } }
       @media (min-width: 1199px) {
         .solution__content__imagen {
-          max-height: 700px;
+          max-height: 750px;
           width: 92%;
           height: auto;
           position: relative;
