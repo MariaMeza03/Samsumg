@@ -270,7 +270,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  background-image: url("../../img/background_one.webp");
+  background-image: url("../img/background_one.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -280,7 +280,7 @@
   justify-content: center; }
   @media (min-width: 1199px) {
     .hero {
-      background-image: url("../../img/background.webp");
+      background-image: url("../img/background.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -722,22 +722,22 @@
           align-items: center;
           justify-content: flex-end; } }
       .offer__grid__item--one {
-        background-image: url("../../img/four.webp");
+        background-image: url("../img/four.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .offer__grid__item--two {
-        background-image: url("../../img/three.webp");
+        background-image: url("../img/three.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .offer__grid__item--three {
-        background-image: url("../../img/two.webp");
+        background-image: url("../img/two.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .offer__grid__item--four {
-        background-image: url("../../img/one.webp");
+        background-image: url("../img/one.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -940,7 +940,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  background-image: url("../../img/background_one.webp");
+  background-image: url("../img/background_one.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -951,7 +951,7 @@
   padding: 0 0 30px 0; }
   @media (min-width: 1199px) {
     .domestic {
-      background-image: url("../../img/background_three.webp");
+      background-image: url("../img/background_three.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
