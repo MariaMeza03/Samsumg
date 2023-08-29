@@ -1202,7 +1202,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-image: url("../img/fondo-gracias.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .thanks .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   .thanks h2 {
     color: black;
     font-size: 20px;
@@ -1224,25 +1231,30 @@
       .thanks p {
         font-size: 18px;
         padding-top: 20px; } }
-  .thanks a {
-    border: 2px solid #253596;
-    margin-top: 15px;
-    background-color: #253596;
-    font-family: OpenSans-Bold;
-    font-weight: bold;
-    padding: 15px 30px;
-    color: white;
-    border-radius: 28px;
-    text-align: center; }
-    @media (min-width: 300px) {
-      .thanks a {
-        font-size: 20px; } }
-    @media (min-width: 768px) {
-      .thanks a {
-        font-size: 25px; } }
-    @media (min-width: 1199px) {
-      .thanks a {
-        margin-top: 30px; } }
+  .thanks__button {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .thanks__button a {
+      border: 2px solid #253596;
+      margin-top: 30px;
+      background-color: #253596;
+      font-family: OpenSans-Bold;
+      padding: 15px 30px;
+      color: white;
+      font-size: 15px;
+      border-radius: 28px;
+      text-align: center; }
+      @media (min-width: 300px) {
+        .thanks__button a {
+          font-size: 20px; } }
+      @media (min-width: 768px) {
+        .thanks__button a {
+          font-size: 25px; } }
+    .thanks__button a:hover {
+      background-color: white;
+      color: #203B77;
+      border: 2px solid #203B77; }
   .thanks a:hover {
     background-color: white;
     color: #253596;

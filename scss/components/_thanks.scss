@@ -3,6 +3,15 @@
   height: 90vh;
   @include flex-center-center;
   flex-direction: column;
+  background-image:url('../img/fondo-gracias.webp');	
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat; 
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
       h2{
         color: $black;
@@ -32,31 +41,36 @@
       }
     }
 
-    a{
-      border: 2px solid $elephant;
-      margin-top: 15px;
-      background-color:$elephant;
-      font-family: OpenSans-Bold;
-      font-weight: bold;
-      padding: 15px 30px ;
-      color:white;
-      border-radius: 28px;
-      text-align: center;
-
-      @media(min-width:300px){
-          font-size: 20px;         
-      }
-
-      @media(min-width:768px){
-          font-size: 25px;
-          
-      }
-
-      @media(min-width:1199px){
+    &__button{
+      @include flex-center-center;
+      
+      a{
+          border: 2px solid $elephant;
           margin-top: 30px;
+          background-color:$elephant ;
+          font-family: OpenSans-Bold;
+          padding: 15px 30px ;
+          color:white;
+          font-size: 15px;
+          border-radius: 28px;
+          text-align: center;
+
+          @media(min-width:300px){
+              font-size: 20px;         
+          }
+
+          @media(min-width:768px){
+              font-size: 25px;
+              
+          }
       }
 
-    }
+      a:hover{
+          background-color:$white ;
+          color: $science_blue;
+          border: 2px solid $science_blue;
+      }
+  }
 
     a:hover{
       background-color:$white ;
