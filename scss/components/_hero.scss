@@ -1,157 +1,155 @@
 .hero{
-    width: 100%;
-	position: relative;
+	width: 100%;
 	height: auto;
-    background-image:url('../img/background_one.webp');	
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat; 
-    /*margin-top: 80px;*/
-   @include flex-center-center;
+	min-height: 100vh;
+	background-image: url('../img/hero.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
 
-    @media(min-width:1199px){
-        background-image:url('../img/background.webp');	
-        background-size:cover;
-        background-position:center;
-        background-repeat: no-repeat; 
-        height: auto;
-        padding: 350px 0;
-    }
+	@media (max-width: 900px) {
+		min-height: 67vh;
+	}
 
+	&__title{
+		width: 100%;
+		@include flex-center-center;
+		flex-direction: column;	
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
 
-    .container{
-        @include flex-center-center;
-        flex-direction: column-reverse;
-
-        @media(min-width:1199px){
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+		@media (max-width: 900px) {
+			top: 32%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-shadow: 2px 2px 2px #000;
 		}
-    }
 
-    &__text{
-        width: 100%;
-        @include flex-center-center;
-        flex-direction: column;
+		h2{
+			width: 100%;
+			text-align: center;
+			font-size: 65px;
+			line-height: 65px;
+			color: $white;
+			font-family: Poppins;
 
-        @media(min-width:1199px){ //*table
-            @include flex-start-center;
-        }
-        
-        h1{
-            color: $black;
-            font-size: 25px;
-            font-weight:bold;
-            text-align: center;
-            font-family: Lato-Bold;
-            line-height: 32px;
+			@media (max-width: 1500px) {
+				font-size: 45px;
+				line-height: 45px;
+			}
 
-            @media(min-width:768px){ //*phone
-                font-size: 45px;
-                line-height:50px;
-            }
+			@media (max-width: 780px) {
+				font-size: 35px;
+				line-height: 40px;
+				max-width: 90%;
+			}
 
-            @media(min-width:1199px){ //*table
-                text-align: start;
-                font-size: 60px;
-            }
+			@media (max-width: 400px) {
+				line-height: 43px;
+			}
 
-            @media(min-width:1700px){//*Desktop
-                line-height: 72px;
-                font-size: 66px;
-            }
-        }
+		}
+		
+		h3{
+			width: 100%;
+			text-align: center;
+			font-size: 140px;
+			line-height: 140px;
+			font-family: Poppins;
+			-webkit-text-stroke-color: $white;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke: 2px $white;
+			-webkit-text-fill-color: transparent;
 
-        span{
-            font-size: 25px;
-            font-weight:bold;
-            text-align: center;
-            font-family: Lato-Bold;
-            line-height: 32px;
+			@media (max-width: 1500px) {
+				font-size: 95px;
+				line-height: 95px;
+			}
 
-            @media(min-width:768px){ //*phone
-                font-size: 45px;
-                line-height:50px;
-            }
+			@media (max-width: 780px) {
+				font-size: 75px;
+				line-height: 95px;
+			}
 
-            @media(min-width:1199px){ //*table
-                text-align: start;
-                font-size: 60px;
-            }
+			@media (max-width: 400px) {
+				font-size: 55px;
+				line-height: 55px;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke: 1px $white;
+			}
 
-            @media(min-width:1700px){//*Desktop
-                line-height: 72px;
-                font-size: 66px;
-            }
-            
-            color: $water_blue;
-        }
+		}
 
-        p{
-            padding-top: 25px;
-            color: $black;
-            font-size: 20px;
-            text-align: center;
-            line-height: 25px;
-            
-            @media(min-width:768px){
-                font-size: 25px;
-                line-height: 32px;
-            }
-            @media(min-width:1199px){ //*table
-                text-align: start;
-            }
-        }
+	}
 
-        &__button{
-            @include flex-center-center;
+	&__button{
+		width: 90%;
+		position: absolute;
+		top: 85%;
+		left: 50%;
+		transform: translate(-50%,-85%);
+		@include flex-center-center;
+		
+		@media (max-width: 900px) {
+			top: 69%;
+		}
+		
+		button{
+			padding: 24px 77px;
+			border-radius: 50px;
+			background: $white;
+			color: $black;
+			font-family: Poppins;
+			font-size: 25px;
+			font-weight: 600;
+			cursor: pointer;
 
-            @media(min-width:1199px){
-                @include flex-center-start;
-            }
+			@media (max-width: 1500px) {
+				padding: 14px 47px;
+				font-size: 25px;
+			}
 
-            a{
-                border: 2px solid $elephant;
-                margin-top: 30px;
-                background-color:$elephant ;
-                font-family: OpenSans-Bold;
-                padding: 15px 30px ;
-                color:white;
-                font-size: 15px;
-                border-radius: 28px;
-                text-align: center;
+			@media (max-width: 780px) {
+				padding: 10px 34px;
+				font-size: 24px;
+			}
 
-                @media(min-width:300px){
-                    font-size: 20px;         
-                }
-    
-                @media(min-width:768px){
-                    font-size: 25px;
-                    
-                }
-            }
+		}
 
-            a:hover{
-                background-color:$white ;
-                color: $science_blue;
-                border: 2px solid $science_blue;
-            }
-        }
-    }
+	}
 
+	&__down{
+		width: 100%;
+		position: absolute;
+		top: 95%;
+		left: 50%;
+		transform: translate(-50%,-95%);
+		@include flex-center-center;
 
-    &__imagen{
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        @include flex-center-start;
+		@media (max-width: 900px) {
+			top: 85%;
+		}
+		
 
-        @media(min-width:1199px){
-            display: none ;
-        }
-    }
+		p{
+			text-align: center;
+			color: $white;
+			font-family: Poppins;
+			font-size: 18px;
+			font-weight: 400;
 
+			@media (max-width: 1500px) {
+				font-size: 14px;
+			}
 
-} 
+			@media (max-width: 780px) {
+				font-size: 14px;
+			}
+
+		}
+
+	}
+
+}

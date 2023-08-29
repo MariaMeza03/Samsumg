@@ -2,56 +2,32 @@
 @import 'globals/colors';
 @import 'globals/container.scss';
 
-
 //* Mixins
 @import 'mixins/flex';
 
 //* Layouts
-@import 'layout/header';
-@import 'layout/menu';
-@import 'layout/footer';
-@import 'layout/whatsapp';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/whatsapp';
 
-//*components
+//* Components	
 @import 'components/hero';
-@import 'components/services';
+@import 'components/authorized';
+@import 'components/risk';
 @import 'components/solution';
-@import 'components/offer';
-@import 'components/best';
-@import 'components/domestic';
-@import 'components/form';
-
-//*thanks
+@import 'components/cards';
+@import 'components/service';
+@import 'components/contact';
+@import 'components/last';
 @import 'components/thanks';
 
 @font-face {
-	font-family:  OpenSans-Regular;
-	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-
-  }
-
-  @font-face {
-	font-family:  OpenSans-Bold;
-	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
-
-  }
-
-  @font-face {
-	font-family: Lato-Bold;
-	src: url('../fonts/Lato-Bold.ttf') format('truetype');
-
-  }
-
-  @font-face {
-	font-family: Lato-Regular;
-	src: url('../fonts/Lato-Regular.ttf') format('truetype');
-
-  }
-
-
+	font-family: Poppins;
+	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
   
 *{
-	font-family: OpenSans-Regular;
+	font-family: Poppins;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -74,5 +50,8 @@ svg{
 	height: 100%;
 }
 
+h1,h2{
+	font-family: Poppins;
+}
 
 
