@@ -1,142 +1,160 @@
 .solution{
-	width: 100%;
+    width: 100%;
 	height: auto;
-	padding: 84px 0px;
-	@include flex-center-center;
-	flex-direction: column;
+    padding: 30px 0;
+    background: $elephant;
+    
 
-	.container{
-		@include flex-center-center;
-	}
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
 
-	h2{
-		margin-bottom: 80px;
-		font-family: 'Poppins';
-		font-size: 38px;
-		color: #034EA2;
-		font-weight: 700;
-		text-align: center;
+        @media(min-width: 1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+        }
 
-		@media (max-width: 991px) {
-			font-size: 28px;
-			line-height: 32px;
-		}
+        &__imagen{
+            width: 100%;
+            height:auto;
+            max-height: 500px;
 
-	}
+            @media(min-width: 600px){
+                width: 500px;
+                height: 800px;
+            }
 
-	&__grid{
-		width: 100%;
-		@include flex-center-center;
+            @media(min-width: 1199px){
+                max-height: 750px;
+                width: 92%;
+                height: auto;
+                position: relative;
+                top: 70px;
+            }
 
-		@media (max-width: 1650px) {
-			gap: 40px;
-		}
+            @media(min-width: 1700px){
+                max-height: 1200px;
+                width: 80%;
+                height: auto;
+            }
 
-		@media (max-width: 1100px) {
-			gap: 70px;
-			flex-direction: column;
-		}
 
-		&__image{
-			width: 40%;
-			padding-right: 40px;
+    
+        }
 
-			@media (max-width: 1650px) {
-				width: 30%;
-			}
+        &__text{
+            @include flex-center-center;
+            flex-direction: column;
+            padding: 0 15px;
 
-			@media (max-width: 1100px) {
-				width: 100%;
-				padding-right: 0px;
-				@include flex-center-center;
-			}
-			
-			img{
-				width: 100%;
-				max-width: 681px;
-				height: auto;
-			}
+            h1.title{
+                color: $white;
+                font-size: 20px;
+                text-align: center;
+                font-family: Lato-Bold;
+                padding-bottom: 15px;
+                
+                @media(min-width:768px){
+                    font-size: 25px;
+                }
 
-		}
+                @media(min-width:1199px){
+                    font-size: 30px;
+                    padding-bottom: 30px;
+                }
+                
+                @media(min-width:1700px){
+                    font-size: 35px;
+                }
+            }
 
-		&__icons{
-			width: 60%;
-			@include flex-center-start;
-			flex-wrap: wrap;
-			padding-right: 20px;
-			gap: 45px;
+            &__information{
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
 
-			@media (max-width: 1650px) {
-				width: 70%;	
-				padding-right: 50px;
-			}
+                &__imagen_line{
+                    @include flex-center-center;
+                    flex-direction: column;
 
-			@media (max-width: 1100px) {
-				width: 100%;
-				padding: 0px 50px;
-				@include flex-center-center;
-			}
+                    &__imagen{
+                        width: 87px;
+                        height: 87px;
+                    }
+    
+                    hr{
+                        height: 100px;
+                        width: 10px;
+                        color: $medium_electric_blue;
+                        background-color: $medium_electric_blue;
+                        border-color:$medium_electric_blue ;
 
-			&__individual{
-				width: calc(50% - 45px);
+                        @media(min-width:350px){
+                            height: 70px;
+                        }
 
-				@media (max-width: 1100px) {
-					min-width: 250px;
-				}
+                    }
+                }
 
-				@media (max-width: 900px) {
-					width: 98%;
-				}
+                &__text{
+                    max-width: 800px;
+                    p{
+                        color: $white;
+                        font-size: 15px;
+                        padding: 3px;
+                
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+                    span{
+                        font-weight: bold;
+                    }
+                }
 
-				&__logo{
-					width: 125px;
-					height: 125px;
-					background: #034EA2;
-					@include flex-center-center;
-					border-radius: 10px;
+                &__button{
+                    @include flex-center-center;
+            
+                    @media(min-width:1199px){
+                        @include flex-center-end;
+                    }
+            
+                    a{
+                        border: 2px solid $white;
+                        margin-top: 15px;
+                        background-color:$white;
+                        font-family: OpenSans-Bold;
+                        font-weight: bold;
+                        padding: 15px 30px ;
+                        color:$elephant;
+                        border-radius: 28px;
+                        text-align: center;
+            
+                        @media(min-width:300px){
+                            font-size: 20px;         
+                        }
+            
+                        @media(min-width:768px){
+                            font-size: 25px;
+                            
+                        }
+            
+                        @media(min-width:1199px){
+                            margin-top: 30px;
+                        }
+            
+                    }
+            
+                    a:hover{
+                        background-color:$elephant ;
+                        color: $white;
+                        border: 2px solid $white;
+                    }
+                }
+               
+            }
+        }
 
-					@media (max-width: 1650px) {
-						width: 80px;
-						height: 80px;
-					}
-
-					img{
-						width: 70%;
-						height: auto;
-					}
-
-				}
-
-				h3{
-					margin-top: 30px;
-					font-family: 'Poppins';
-					font-size: 38px;
-					font-weight: 700;
-
-					@media (max-width: 1650px) {
-						margin-top: 20px;
-						font-size: 24px;
-					}
-
-				}
-
-				p{
-					margin-top: 20px;
-					font-family: 'Poppins';
-					font-size: 18px;
-					font-weight: 300;
-
-					@media (max-width: 1650px) {
-						margin-top: 10px;
-						font-size: 17px;
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
+    }
 }

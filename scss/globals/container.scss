@@ -5,27 +5,27 @@
 	width: 100%;
 
 	@media(min-width: 576px) {
-		max-width: 800px;
+		max-width: 600px;
 	}
 
 	@media(min-width: 768px) {
-		max-width: 1050px;
+		max-width: 700px;
 	}
 
 	@media(min-width: 992px) {
-		max-width: 1200px;
+		max-width: 900px;
 	}
 
 	@media(min-width: 1200px) {
-		max-width: 1300px;
+		max-width: 1150px;
 	}
 
 	@media(min-width: 1400px) {
-		max-width: 1620px;
+		max-width: 1300px;
 	}
 
 	@media(min-width: 1700px) {
-		max-width: 1550px;
+		max-width: 1500px;
 	}
 
 }
@@ -36,59 +36,29 @@
 	max-width: 100%;
 	width: 100%;
 
-	@media(min-width: 576px) {
-		max-width: 540px;
-	}
-
-	@media(min-width: 768px) {
-		max-width: 960px;
-	}
-
-	@media(min-width: 992px) {
-		max-width: 1160px;
-	}
-
-	@media(min-width: 1200px) {
-		max-width: 1360px;
-	}
-
-	@media(min-width: 1400px) {
-		max-width: 1460px;
-	}
-
-	@media(min-width: 1700px) {
-		max-width: 1560px;
-	}
-
-}
-
-.container-header{
-	padding: 0 15px;
-	margin: 0 auto;
-	max-width: 100%;
-	width: 100%;
 
 	@media(min-width: 576px) {
 		max-width: 540px;
 	}
 
 	@media(min-width: 768px) {
-		max-width: 960px;
+		max-width: 620px;
 	}
 
 	@media(min-width: 992px) {
-		max-width: 1160px;
+		max-width: 760px;
 	}
 
 	@media(min-width: 1200px) {
-		max-width: 1360px;
+		max-width: 1050px;
 	}
 
 	@media(min-width: 1400px) {
-		max-width: 1460px;
+		max-width: 1280px;
 	}
 
 	@media(min-width: 1700px) {
-		max-width: 1560px;
+		max-width: 100%;
 	}
+
 }

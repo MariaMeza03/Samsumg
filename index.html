@@ -7,343 +7,558 @@
 	<link rel="icon" type="image/x-icon" href="public/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Samsung - Reparación de línea blanca</title>
+	<meta name="description" content="" />
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 
-	<body>
+<body>
 
-		<header class="header">
+    <header class="header">
 
-				<div class="container-header">
+        <!-- MOBILE -->
+        <div class="header__mobile">
 
-					<div class="header__logo">
-						<img src="img/samsung.svg" alt="">
-					</div>
+            <div class="container">
 
-					<div class="header__text">
+                <!-- LOGO -->
+                <a class="header__mobile__logo" href="index.html">
+                    <img src="img/logo.webp" alt="logo" width="100%" height="100%" />
+                </a>
 
-						<a href="tel:55 9506 9707" class="header__text__individual">
-							<img src="img/tel.svg" alt="">
-							<h4>55 9506 9707</h4>
-						</a>
+                <!-- TOGGLE -->
+                <button class="header__mobile__toggle" type="button" aria-label="Menu">
+                    <span class="header__mobile__toggle__bar"></span>
+                </button>
 
-						<a href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20me%20gustaria%20cotizar." target="_blank" class="header__text__individual">
-							<img src="img/wsp.svg" alt="">
-							<h4>55 2503 5146</h4>
-						</a>
-					</div>
 
-				</div>	
+            </div>
 
-		</header>
+        </div>
 
-		<main class="main">
+        <div class="header__desktop">
 
-			<nav role="button" class="layout_whatsapp">
-				<a class="layout_whatsapp__button" href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20me%20gustaria%20cotizar." target="_blank" >
-				<img src='img/whatsapp-icon-logo-6E793ACECD-seeklogo.com.webp' alt='whastapp'  width="100%" height="100%"/>
-				</a>
-			</nav>
-			
-			<div class="hero">
+            <div class="container">
 
-				<div class="hero__title">
-					<h2>Servicio Técnico</h2>
-					<h2>Especializado en Línea Blanca</h2>
-					<h3>Samsung</h3>
-				</div>
+                <!-- Logo -->
+                <a class="header__desktop__logo" href="index.html">
+                    <img src="img/logo.webp" alt="logo" width="100%" height="100%" />
+                </a>
+
+                <div class="header__desktop__contact">
+
+                    <div class="header__desktop__contact__item">
+
+                        <div class="header__desktop__contact__item__icon">
+                            <img src="./img/tel.webp " alt="phone" width="100%" height="100%"/>
+                        </div>
+
+                        <a class="phone" href="tel:55 9506 9707" >55 9506 9707</a>
+
+                    </div>
+
+                    <div class="header__desktop__contact__item">
+
+                        <div class="header__desktop__contact__item__icon">
+                            <img src="./img/wsp.webp " alt="phone" width="100%" height="100%"/>
+                        </div>
+
+                        <a class="phone" href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20cotizar" target="_blank">55 2503 5146</a>  
+                                        
+                    </div>
+
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MENU -->
+	<nav role="menu" class="menu">
+	
+		<div class="container">
+			<div class="menu__links">
+
+                <div class="menu__links__contact">
+
+                    <div class="menu__links__contact__item">
+
+                        <div class="menu__links__contact__item__icon">
+                            <img src="img/tel.webp" alt="phone" width="100%" height="100%" />
+                        </div>
+
+                        <a  class="phone" href="tel:55 9506 9707" >55 9506 9707</a>
+                        
+                    </div>
+
+
+                </div>	
+                
+                <div class="menu__links__contact">
+
+                    <div class="menu__links__contact__item">
+
+                        <div class="menu__links__contact__item__icon">
+                            <img src="img/wsp.webp" alt="phone" width="100%" height="100%" />
+                        </div>
+
+                        <a  class="phone" href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20cotizar" target="_blank" >55 2503 5146</a>    
+
+                    </div>
+
+
+                </div>
 				
-				<div class="hero__button">
-					<button>¡Cotiza sin costo!</button>
-				</div>
-
-				<div class="hero__down">
-					<p>Servicios de Reparación, Mantenimiento e Instalación para tus Electrodomésticos Samsung</p>
-				</div>
-
-			</div>
-
-			<div class="authorized">
-
-				<div class="container">
-
-					<h2>Centro Autorizado Samsung México</h2>
-
-					<div class="authorized__grid">
-
-						<ul class="authorized__grid__list">
-							<li><span>Instalamos, reparamos y damos mantenimiento</span> a tus refrigeradores, lavadoras, secadoras y lavasecadoras Samsung.</li>
-							<li>Contamos con <span>más de 10 años de experiencia</span> ofreciendo servicios de premium.</li>
-							<li>Nuestros técnicos especializados Samsung, <span>garantizan un trabajo confiable.</span></li>
-						</ul>
-
-						<div class="authorized__grid__images">
-
-							<div class="authorized__grid__images__individual">
-								<img src="img/mantenimiento.png" alt="">
-								<p>Mantenimiento</p>
-							</div>
-
-							<div class="authorized__grid__images__individual">
-								<img src="img/instalacion.png" alt="">
-								<p>Instalación</p>
-							</div>
-
-							<div class="authorized__grid__images__individual">
-								<img src="img/reparacion.png" alt="">
-								<p>Reparación</p>
-							</div>
-
-						</div>
-
-					</div>
-
-					<a href="tel:55 9506 9707" class="authorized__button">¡Agenda con una llamada!</a>
-
-				</div>
-
-			</div>
-
-			<div class="risk">
-
-				<div class="risk__blackout"></div>
-
-				<div class="container">
-
-					<h2>¡No arriesgues y pon tus electrodomésticos en manos expertas!</h2>
-				
-					<p>Reparación en línea blanca Samsung el mismo día.</p>
-				
-					<a href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20me%20gustaria%20cotizar." target="_blank">¡Escríbenos!</a>
-				
-				</div>
-		
-			</div>
-
-			<div class="solution">
-
-				<div class="container">
-					<h2>La mejor solución en Servicio Técnico Samsung, ¡está aquí!</h2>
-				</div>
-
-				<div class="solution__grid">
-
-					<div class="solution__grid__image">
-						<img src="img/solution.png" alt="">
-					</div>
-					
-					<div class="solution__grid__icons">
-
-						<div class="solution__grid__icons__individual">
-							<div class="solution__grid__icons__individual__logo">
-								<img src="img/expertos.svg" alt="">
-							</div>
-							<h3>Expertos Certificados</h3>
-							<p>Nuestro equipo de técnicos está certificado y
-								cuenta con amplia experiencia en reparación
-								de línea blanca Samsung.</p>
-						</div>
-
-						<div class="solution__grid__icons__individual">
-							<div class="solution__grid__icons__individual__logo">
-								<img src="img/domiclio.svg" alt="">
-							</div>
-							<h3>Servicio a Domicilio</h3>
-							<p>Nos desplazamos hasta tu hogar para brindarte
-								comodidad y evitar que tengas que transportar
-								tus electrodomésticos.</p>
-						</div>
-
-						<div class="solution__grid__icons__individual">
-							<div class="solution__grid__icons__individual__logo">
-								<img src="img/repuestos.svg" alt="">
-							</div>
-							<h3>Repuestos Originales</h3>
-							<p>Utilizamos únicamente repuestos originales de
-								Samsung para garantizar la calidad y el
-								rendimiento de tus electrodomésticos.</p>
-						</div>
-
-						<div class="solution__grid__icons__individual">
-							<div class="solution__grid__icons__individual__logo">
-								<img src="img/atention.svg" alt="">
-							</div>
-							<h3>Atención Urgente</h3>
-							<p>Contamos con un servicio técnico Samsung
-								urgente para atender tus emergencias y
-								resolver los problemas rápidamente.</p>
-						</div>
-
-					</div>
-					
-				</div>
-
-			</div>
-
-			<div class="cards">
-
-				<div class="container">
-
-					<div class="cards__individual">
-						<div class="cards__individual__image">
-							<img src="img/especializado.png" alt="">
-						</div>
-						<h1>Servicio</h1>
-						<h1>Especializado</h1>
-						<p class="cards__individual__first">Refrigeradores, lavadoras, secadoras y lavasecadoras.</p>
-					</div>
-
-					<div class="cards__individual">
-						<div class="cards__individual__image">
-							<img src="img/garantia.png" alt="">
-						</div>
-						<h1>Servicio</h1>
-						<h1>de Garantía</h1>
-						<p>Reparación, mantenimiento e instalación</p>
-					</div>
-
-					<div class="cards__individual">
-						<div class="cards__individual__image">
-							<img src="img/atencion.png" alt="">
-						</div>
-						<h1>Horario</h1>
-						<h1>de Atención</h1>
-						<p class="cards__individual__last">Lunes a Domingo 8:00 am - 10:00 pm</p>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="service">
-				
-				<div class="container">
-				
-					<h2>¡El mejor servicio a domicilio Samsung!</h2>
-				
-					<p class="service__p">¿Qué servicio requieres? ¡Nosotros lo tenemos!</p>
-
-					<div class="service__grid">
-
-						<div class="service__grid__individual">
-							<img src="img/refrig.png" alt="">
-							<div class="service__grid__individual__text">
-								<p>Reparación de Refrigeradores Samsung</p>
-							</div>
-						</div>
-
-						<div class="service__grid__individual">
-							<img src="img/lavadora.png" alt="">
-							<div class="service__grid__individual__text">
-								<p>Mantenimiento de Lavadoras Samsung</p>
-							</div>
-						</div>
-
-						<div class="service__grid__individual">
-							<img src="img/secadora.png" alt="">
-							<div class="service__grid__individual__text">
-								<p>Instalación de Secadoras Samsung</p>
-							</div>
-						</div>
-
-						<div class="service__grid__individual">
-							<img src="img/lavseca.png" alt="">
-							<div class="service__grid__individual__text">
-								<p>Reparación de Lavasecadoras Samsung</p>
-							</div>
-						</div>
-
-					</div>
-
-					<a href="tel:55 9506 9707" class="service__button">¡Llámanos!</a>
-				
-				</div>
-
-			</div>
-
-			<div class="contact">
-
-				<div class="contact__image">
-
-					<div class="contact__image__text">
-						<p>¡Confía en nuestro equipo especializado para mantener tus electrodomésticos Samsung en óptimas condiciones!</p>
-					</div>
-
-				</div>
-
-				<form id="formContact" class="contact__form">
-
-					<h2>Contacto</h2>
-
-					<p>¡Solicita una cotización para la reparación o mantenimiento de tus equipos Samsung! Completa el formulario a continuación:</p>
-
-					<label for="">Nombre:</label>
-
-					<input type="text" id="name" name="name">
-
-					<label for="">Correo:</label>
-
-					<input type="email" id="email" name="email">
-
-					<label for="">Número de teléfono:</label>
-
-					<input type="number" id="number" name="number">
-
-					<label for="">Cuéntanos qué servicio requieres:</label>
-
-					<textarea name="service" id="service" cols="30" rows="10"></textarea>
-
-					<div class="contact__form__button">
-						<button type="submit" name="enviar" value="Send">ENVIAR</button>
-					</div>
-
-				</form>
-
-			</div>
-
-			<div class="last">
-
-				<div class="last__lavadora">
-					<img src="img/lavadora_last.png" alt="">
-				</div>
-
-				<div class="last__herramientas">
-					<img src="img/herramientas_last.png" alt="">
-				</div>
-
-				<div class="last__text">
-					<h4>¡Agenda ahora tu servicio y <span>garantiza el correcto funcionamiento</span> de tus electrodomésticos Samsung!</h4>
-				</div>
-
-				<div class="last__icon">
-					<img src="img/logo_last.png" alt="">
-				</div>
-
-			</div>
-
-		</main>
-
-		<footer class="footer">
-
+			</div>	
+		</div>
+	
+	</nav>
+
+    <!-- Button whastapp -->
+    <nav role="button" class="layout_whatsapp">
+		<a class="layout_whatsapp__button" href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20cotizar" target="_blank">
+			<img src='./img/whatsapp-icon-logo-6E793ACECD-seeklogo.com.webp' alt='whastapp'  width="100%" height="100%"/>
+		</a>
+	</nav>
+    
+    <main class="main">
+        <div class="hero">
 			<div class="container">
 
-				<div class="footer__logo">
-					<img src="img/samsung.svg" alt="">
+				<div class="hero__text">
+					<h1>Servicio Técnico</h1>
+                    <h1>Especializado en</h1>
+                    <h1>Línea Blanca</h1>
+                    <h1><span> Samsung</span></h1>
+					<p>Servicios de Reparación, Mantenimiento 
+                    </br> e Instalación para tus Electrodomésticos Samsung</p>
+						<div class="hero__text__button">
+							<a href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20cotizar" target="_blank">¡Cotiza sin costo!</a>
+						</div>
 				</div>
-
-				<div class="footer__text">
-					<p>Copyright © 2023 Servicio a Domicilio Samsung. Todos los derechos reservados</p>
-					<p>Las marcas registradas y logotipos mostrados en este sitio web, son propiedad de sus respectivos titulares y son utilizados únicamente con fines ilustrativos.</p>
-				</div>
-
+                
+                <div class="hero__imagen">
+                    <img src="./img/first-banner.webp" alt="logo" width="100%" height="100%" />
+                </div>
+				
 			</div>
-		
-		</footer>
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-		<script src="./js/validation.js"></script>
+		</div>
 
-	</body>
+        <div class="services">
+
+            <div class="container">
+
+                <h1 class="title">Centro Autorizado Samsung México</h1>
+
+                <div class="services__grid">
+
+                    <div class="services__grid__item">
+                        <div class="services__grid__item__imagen">
+                            <img src="img/Mantenimiento.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="services__grid__item__text">
+                            <h1>Lavadoras</h1>
+                            <p>Al solicitar cualquiera de nuestros servicios nunca estará en riesgo la garantía de tus electrodomésticos.</p>
+                        </div>
+                    </div>
+    
+                    <div class="services__grid__item">
+                        <div class="services__grid__item__imagen">
+                            <img src="img/Reparacion.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="services__grid__item__text">
+                            <h1>Reparación</h1>
+                            <p>Nuestros técnicos especializados Samsung, garantizan un trabajo confiable.</p>
+                        </div>
+                    </div>
+    
+                    <div class="services__grid__item">
+                        <div class="services__grid__item__imagen">
+                            <img src="img/Experiencia.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="services__grid__item__text">
+                            <h1>Instalación</h1>
+                            <p>Instalamos, reparamos y damos mantenimiento a tus refrigeradores, lavadoras, secadoras y lavasecadoras Samsung.</p>
+                        </div>
+                    </div>
+    
+                    <div class="services__grid__item">
+                        <div class="services__grid__item__imagen">
+                            <img src="img/Instalacion.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="services__grid__item__text">
+                            <h1>Experiencia</h1>
+                            <p>Contamos con más de 10 años de experiencia ofreciendo servicios de premium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__button">
+                    <a href="tel:5595069707">¡Agenda con una llamada!</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="solution">
+            <div class="solution__content">
+
+                <div class="solution__content__imagen">
+                    <img src="img/Imagen-solution.webp" alt="service" width="100%" height="100%" />
+                </div>
+
+                <div class="solution__content__text">
+                    <h1 class="title">La mejor solución en Servicio Técnico Samsung, ¡está aquí!</h1>
+
+                    <div class="solution__content__text__information">
+                        <div class="solution__content__text__information__imagen_line">
+                            <div class="solution__content__text__information__imagen_line__imagen">
+                                <img src="img/one-solution.webp" alt="service" width="100%" height="100%" />
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="solution__content__text__information__text">
+                            <p><span>Expertos Certificados:</span></p>
+                            <p>Nuestro equipo de técnicos está certificado y cuenta con amplia experiencia en reparación de línea blanca Samsung.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution__content__text__information">
+                        <div class="solution__content__text__information__imagen_line">
+                            <div class="solution__content__text__information__imagen_line__imagen">
+                                <img src="img/two-solution.webp" alt="service" width="100%" height="100%" />
+                            </div>
+                            <hr>
+                        </div>
+                        
+                        <div class="solution__content__text__information__text">
+                            <p><span>Repuestos Originales:</span></p>
+                            <p>Utilizamos únicamente repuestos originales de Samsung para garantizar la calidad y el rendimiento de tus electrodomésticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution__content__text__information">
+                        <div class="solution__content__text__information__imagen_line">
+                            <div class="solution__content__text__information__imagen_line__imagen">
+                                <img src="img/three-solution.webp" alt="service" width="100%" height="100%" />
+                            </div>
+                            <hr>
+                        </div>
+                        
+                        <div class="solution__content__text__information__text">
+                            <p><span>Servicio a Domicilio:</span></p>
+                            <p>Nos desplazamos hasta tu hogar para brindarte comodidad y evitar que tengas que transportar tus electrodomésticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution__content__text__information">
+                        <div class="solution__content__text__information__imagen_line">
+                            <div class="solution__content__text__information__imagen_line__imagen">
+                                <img src="img/four-solution.webp" alt="service" width="100%" height="100%" />
+                            </div>
+                            <hr style="background-color: transparent; border: transparent;">
+                        </div>
+                        
+                        <div class="solution__content__text__information__text">
+                            <p><span>Atención Urgente:</span></p>
+                            <p>Contamos con un servicio técnico Samsung urgente para atender tus emergencias y resolver los problemas rápidamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution__content__text__information__button">
+                        <a href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20cotizar" target="_blank">Escríbenos</a>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="offer">
+            <div class="container">
+                <div class="offer__title">
+                    <h1>¿Qué servicio requieres? ¡Nosotros lo tenemos!</h1>
+                </div>
+
+                <div class="offer__grid">
+                    <div class="offer__grid__item offer__grid__item--one">
+                        <div class="offer__grid__item__text">
+                            <h1>Reparación de <br/>
+                                Refrigeradores Samsung</h1>
+                        </div>
+                    </div>
+
+                    <div class="offer__grid__item offer__grid__item--two">
+                        <div class="offer__grid__item__text">
+                            <h1>Mantenimiento de<br/>
+                                Lavadoras Samsung</h1>
+                        </div>
+                    </div>
+
+                    <div class="offer__grid__item offer__grid__item--three">
+                        <div class="offer__grid__item__text">
+                            <h1>Instalación de<br/>
+                                Secadoras Samsung</h1>
+                        </div>
+                    </div>
+
+                    <div class="offer__grid__item offer__grid__item--four">
+                        <div class="offer__grid__item__text">
+                            <h1>Reparación de<br/>
+                                Lavasecadoras Samsung</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer__carrousel">
+                    <!-- Slider main container -->
+                    <div class="swiper" >
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            
+                            <!-- Slides -->
+                            <div class="swiper-slide ">
+                                <div class="offer__carrousel__item offer__carrousel__item--one">
+                                    <div class="offer__carrousel__item__text">
+                                        <h1>Reparación de <br/>
+                                            Refrigeradores Samsung</h1>
+                                    </div>
+                                </div>
+                                
+                                
+
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class=" offer__carrousel__item offer__carrousel__item--two">
+                                    <div class="offer__carrousel__item__text">
+                                        <h1>Mantenimiento de<br/>
+                                            Lavadoras Samsung</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide ">
+                                <div class="offer__carrousel__item offer__carrousel__item--three">
+                                    <div class="offer__carrousel__item__text">
+                                        <h1>Instalación de<br/>
+                                            Secadoras Samsung</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="offer__carrousel__item offer__carrousel__item--four">
+                                    <div class="offer__carrousel__item__text">
+                                        <h1>Instalación de<br/>
+                                            Secadoras Samsung</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="offer--prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    </div>
+
+                    <div class="offer--next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div> 
+
+        <div class="the_best">
+
+            <div class="container">
+
+                <h1 class="title">¡El mejor servicio a domicilio Samsung!</h1>
+
+                <div class="the_best__button">
+                    <a href="tel:5595069707">¡Llámanos!</a>
+                </div>
+
+                <div class="the_best__grid">
+
+                    <div class="the_best__grid__item">
+                        <div class="the_best__grid__item__imagen">
+                            <img src="img/Servicios-Especializados.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="the_best__grid__item__text">
+                            <h1>Servicio Especializado</h1>
+                            <p>Refrigeradores, lavadoras,
+                             secadoras y lavasecadoras.</p>
+                        </div>
+                    </div>
+    
+                    <div class="the_best__grid__item">
+                        <div class="the_best__grid__item__imagen">
+                            <img src="img/Servicios.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="the_best__grid__item__text">
+                            <h1>Servicio de Garantía</h1>
+                            <p>Reparación, mantenimiento e instalación.</p>
+                        </div>
+                    </div>
+    
+                    <div class="the_best__grid__item">
+                        <div class="the_best__grid__item__imagen">
+                            <img src="img/Horario.webp" alt="service" width="100%" height="100%" />
+                        </div>
+    
+                        <div class="the_best__grid__item__text">
+                            <h1>Horario de Atención</h1>
+                            <p>Lunes a Domingo 8:00 am - 10:00 pm.</p>
+                        </div>
+                    </div>
+    
+                </div>
+                     
+            </div>
+
+        </div>
+
+        <div class="domestic">
+			<div class="container">
+
+				<div class="domestic__text">
+					<h1>¡No arriesgues y pon tus electrodomésticos
+                        en manos expertas!</h1>
+					<p>Reparación en línea blanca Samsung el mismo día.</p>
+                    <p>¡Confía en nuestro equipo especializado para mantener tus electrodomésticos Samsung en óptimas condiciones!</p>
+                    <p> Agenda ahora tu servicio y garantiza el correcto funcionamiento de tus electrodomésticos Samsung!</p>
+                    
+						<div class="domestic__text__button">
+							<a href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20cotizar" target="_blank">¡Recibe atención inmediata!</a>
+						</div>
+				</div>
+                
+                <div class="domestic__imagen">
+                    <img src="./img/Imagen-domestic.webp" alt="logo" width="100%" height="100%" />
+                </div>
+				
+			</div>
+
+		</div>
+
+        <div class="form">
+            <div class="container">
+
+                <div class="form__text">
+                    <h1>¡Solicita una cotización para la reparación o mantenimiento de tus equipos Samsung!</h1>
+                    <p>Completa el formulario a continuación:</p>
+
+                    <div class="form__text__grid">
+                        <div class="form__text__grid__item">
+
+                            <div class="form__text__grid__item__icon">
+                                <img src="./img/tel.webp " alt="phone" width="100%" height="100%"/>
+                            </div>
+    
+                            <a class="phone" href="tel:55 9506 9707" >55 9506 9707</a>
+    
+                        </div>
+    
+                        <div class="form__text__grid__item">
+    
+                            <div class="form__text__grid__item__icon">
+                                <img src="./img/wsp.webp " alt="phone" width="100%" height="100%"/>
+                            </div>
+    
+                            <a class="phone" href="https://api.whatsapp.com/send?phone=5525035146&text=Hola%20quiero%20agendar" target="_blank">55 2503 5146</a>  
+                                            
+                        </div>
+    
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="form__question">
+
+                    <form class="form__question__inputs"  id="formContact" class="contact__form">
+
+                        <div class="form__question__grid">
+                            <div class="form__question__inputs__input">
+                                <input id="nombre" name="nombre" placeholder="NOMBRE" type="text"/>
+                            </div>
+    
+                            <div class="form__question__inputs__input">
+                                <input  id="email" name="email" placeholder="EMAIL" type="text"/>
+                            </div>
+                        </div>
+                        
+                        <div class="form__question__grid">
+                            <div class="form__question__inputs__input">
+                                <input id="telefono" name="telefono" placeholder="TELÉFONO" type="text"/>
+                            </div>
+
+                            <div class="form__question__inputs__input">
+                                <input id="servicio" name="servicio" placeholder="SERVICIO" type="text"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form__question__inputs__input" style="display: flex; flex-direction: column;">
+                            <textarea name="comentarios"  id="comentarios" placeholder="COMENTARIOS"></textarea>
+                        </div>
+
+                        <div class="form__question__inputs__input__button">
+                            <button type="submit"  name="" value="Send" >ENVIAR</button>
+                        </div>
+                    </form>
+
+                </div>
+              
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+		<div class="container">
+	
+			<div class="footer__text">
+				<h1>Copyright 2023 © Línea Blanca. Todos los Derechos Reservados.</h1>				
+			</div>
+
+           <div></div>
+
+		</div>
+	</footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/correo.js"></script>
+
+</body>
+
+
+
 
 </html>
